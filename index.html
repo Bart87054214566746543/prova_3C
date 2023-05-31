@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prova</title>
+</head>
+<body>
+    <h1>login</h1>
+   <form>
+    <input type="email" placeholder="email" id="Email">
+    <input type="password" placeholder="senha" id="senha">
+    <input type="submit" onclick = "logar(); return false">
+   </form>
+  
+<script>
+   function logar(){
+    var login = document.getElementById('email').value;
+    var senha = document.getElementById('senha').value;
+   }
+   if(login =="jose"&& senha =="boy"){
+    alert('login com sucesso')
+    windows.location="logado.html";
+   }
+else{
+    alert('erro ao logar')
+}
+</script>
+
+</body>
+</html>
