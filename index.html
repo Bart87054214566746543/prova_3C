@@ -10,24 +10,24 @@
 <body>
     <h1>login</h1>
    <form>
-    <input type="email" placeholder="email" id="Email">
+    <input type="email" placeholder="email" id="email">
     <input type="password" placeholder="senha" id="senha">
-    <input type="submit" onclick = "logar(); return false">
+    <input type="submit" onclick="logar()
+    ">
    </form>
   
 <script>
    function logar(){
-    var login = document.getElementById('Email').value;
+    var login = document.getElementById('email').value;
     var senha = document.getElementById('senha').value;
-   }
-   if(login =="jose" && senha =="boy"){
+}
+   if(login =="jose@gmail.com" && senha =="boy"){
     alert('login com sucesso')
-    windows.location="inicio.html";
-   }
+    windows.location ="inicio.html";
+}
 else{
-    alert('erro ao logar')
+    alert('erro ao logar');
 }
 </script>
-
 </body>
 </html>
